@@ -11,7 +11,7 @@
     ## check if the jar is available and install if needed (on first load)
     if (!file.exists(path)) {
 
-        url <- paste0('https://s3.amazonaws.com/athena-downloads/drivers/JDBC/SimbaAthenaJDBC_', version, '/', file)
+        url <- paste0('https://athena-downloads.s3.amazonaws.com/drivers/JDBC/athena-preview/SimbaAthenaJDBC_2.0.11_preview/AthenaJDBC41_preview.jar')
 
         ## download the jar file from AWS
         try(download.file(url = url, destfile = path, mode = 'wb'),
